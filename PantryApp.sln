@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreCupboardApi", "StoreCupboardApi\StoreCupboardApi.csproj", "{8ED27552-74D7-4AD6-8F51-B8CD5F3D3CF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreCupboardDomain", "StoreCupboardDomain\StoreCupboardDomain.csproj", "{38C0552C-06BB-4D09-A748-2BC935A8C7A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreCupboardDomain.Test", "StoreCupboardDomain.Test\StoreCupboardDomain.Test.csproj", "{614F224F-AD7B-476E-B9D4-35F693FF65E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{8ED27552-74D7-4AD6-8F51-B8CD5F3D3CF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8ED27552-74D7-4AD6-8F51-B8CD5F3D3CF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ED27552-74D7-4AD6-8F51-B8CD5F3D3CF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38C0552C-06BB-4D09-A748-2BC935A8C7A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38C0552C-06BB-4D09-A748-2BC935A8C7A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38C0552C-06BB-4D09-A748-2BC935A8C7A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38C0552C-06BB-4D09-A748-2BC935A8C7A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{614F224F-AD7B-476E-B9D4-35F693FF65E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{614F224F-AD7B-476E-B9D4-35F693FF65E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{614F224F-AD7B-476E-B9D4-35F693FF65E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{614F224F-AD7B-476E-B9D4-35F693FF65E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
