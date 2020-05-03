@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 
 namespace StoreCupboardDomain.Test
 {
@@ -16,7 +17,7 @@ namespace StoreCupboardDomain.Test
             var target = new Storage(name);
 
             // Assert
-            Assert.That(target.Id, Is.Not.Empty);
+            Assert.That(target.Id, Is.Not.EqualTo(new Guid()));
             Assert.That(target.Name, Is.EqualTo(name));
         }
     }
