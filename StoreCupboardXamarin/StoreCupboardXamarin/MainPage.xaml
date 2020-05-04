@@ -6,11 +6,9 @@
              mc:Ignorable="d"
              x:Class="StoreCupboardXamarin.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="{Binding Source={x:Reference SliderId}, Path=Value}"></Label>
+        <Slider x:Name="SliderId" Minimum="0" Maximum="100"></Slider>
+        <Button Text="Press to update" />
     </StackLayout>
-
 </ContentPage>
