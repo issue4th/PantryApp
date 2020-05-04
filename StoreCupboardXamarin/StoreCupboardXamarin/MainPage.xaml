@@ -7,8 +7,18 @@
              x:Class="StoreCupboardXamarin.MainPage">
 
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label Text="{Binding Source={x:Reference SliderId}, Path=Value}"></Label>
-        <Slider x:Name="SliderId" Minimum="0" Maximum="100"></Slider>
+        <Label
+            Text="{Binding
+            Source={x:Reference SliderId},
+            Path=Value,
+            StringFormat='Value is {0:F2}'}"
+
+            Opacity="{Binding
+            Source={x:Reference SliderId},
+            Path=Value}" />
+
+        <Slider x:Name="SliderId" Minimum="0" Maximum="100" />
+
         <Button Text="Press to update" />
     </StackLayout>
 </ContentPage>
