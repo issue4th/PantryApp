@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="StoreCupboardXamarin.QuotesPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS">20, 30, 20, 20</On>
+            <On Platform="UWP">20, 40, 20, 20</On>
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <ContentPage.Content>
+        <StackLayout BindingContext="{x:Reference QuoteSelector}">
+            <Button Text="Next" Clicked="OnNextQuote" />
+            <Label
+                Text="{Binding
+                    Value,
+                    StringFormat='Font size {0:N0}'}" />
+            <Slider
+                x:Name="QuoteSelector"
+                Minimum="16"
+                Maximum="50" />
+            <Label
+                x:Name="Quote"
+                FontSize="{Binding Value}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
