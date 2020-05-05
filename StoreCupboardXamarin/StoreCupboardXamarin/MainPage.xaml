@@ -6,6 +6,13 @@
              mc:Ignorable="d"
              x:Class="StoreCupboardXamarin.MainPage">
 
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS">0,20,0,0</On>
+            <On Platform="Android">0,40,0,0</On>
+        </OnPlatform>
+    </ContentPage.Padding>
+
     <StackLayout
         HorizontalOptions="Center"
         VerticalOptions="Center"
